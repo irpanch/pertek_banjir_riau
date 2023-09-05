@@ -7,19 +7,19 @@ output:
   officedown::rdocx_document:
     reference_docx: template.docx
 params:
-  river_location: "Citarum"
-  name_ca: "Citarum"
+  river_location: "Kampar"
+  name_ca: "Kampar"
   length_river: 550
   length_river_proyek: 550
   slope_river: 0.002
   slope_river_proyek: 0.0003
   area_ca: 11542
   area_ca_proyek: 30.5
-  client_company: "PT. Wastek International"
-  kecamatan: "Babakan Cikao"
-  kabupaten: "Purwakarta"
-  provinsi: "Jawa Barat"
-  sta_hujan1: "Sta. Hujan Cikao"
+  client_company: "PT Asia Pacific Rayon"
+  kecamatan: "Pelalawan"
+  kabupaten: "Pangkalan Kerinci"
+  provinsi: "Riau"
+  sta_hujan1: "Sta. Pelalawan"
 ---
 
 ```{r setup, include=FALSE}
@@ -27,11 +27,11 @@ knitr::opts_chunk$set(
   echo = FALSE,
   # Table captioning
   tab.cap.style = "Table Caption",
-  tab.cap.pre = "Table ",
+  tab.cap.pre = "Tabel ",
   tab.cap.sep=": ",
   # Figure captioning
   fig.cap.style = "Image Caption",
-  fig.cap.pre = "Figure ",
+  fig.cap.pre = "Gambar ",
   fig.cap.sep=": ",
   fig.align = "center",
   fig.width = 6,
@@ -176,7 +176,7 @@ Berdasarkan SNI 2415-2016 tentang "Tata Cara Perhitungan Debit Banjir Rencana", 
 knitr::include_graphics(here::here("03_figures", "bagan_alir_banjir.png"))
 ```
 
-Karena ketersediaan data dengan rentang panjang yang berada di lokasi hanyalah data hujan maksimum harian selama `20 tahun serta luasan CA yang kurang dari 50 Km2`, maka prosedur yang dilakukan berdasarkan bagan alir diatas adalah: `pengumpulan data hujan harian maksimum tiap tahun pencatatan, analisa frekuensi, intensitas hujan, analisa rasional, dan terakhir memperoleh debit banjir rencana`.
+Karena ketersediaan data dengan rentang panjang yang berada di lokasi hanyalah data hujan maksimum harian selama 20 tahun serta luasan CA yang kurang dari 50 Km2, maka prosedur yang dilakukan berdasarkan bagan alir diatas adalah: pengumpulan data hujan harian maksimum tiap tahun pencatatan, analisa frekuensi, intensitas hujan, analisa rasional, dan terakhir memperoleh debit banjir rencana.
 
 ### Debit Banjir di Lokasi Proyek
 
@@ -184,7 +184,7 @@ Perhitungan debit banjir di lokasi proyek menggunakan metode rasional. Metode in
 
 ### Debit Banjir di Sungai `r params$river_location`
 
-Sungai besar yang terdekat dari lokasi pekerjaan adalah Sungai `r params$river_location` yang berjarak `±1.7` Km ke arah barat dari lokasi tapak proyek (`Gambar 9`). Untuk mengetahui pengaruh Sungai Citarum terhadap lokasi proyek maka perlu dihitung juga besaran debit Q100 `r params$river_location` yang nantinya menjadi input model hidrolika sehingga diketahui seberapa luas pengaruh banjir yang terjadi disertai elevasi tinggi muka air banjirnya.
+Sungai besar yang terdekat dari lokasi pekerjaan adalah Sungai `r params$river_location` yang berjarak ±7.4 Km ke arah tenggara dari lokasi tapak proyek (`Gambar 9`). Untuk mengetahui pengaruh Sungai Kampar terhadap lokasi proyek maka perlu dihitung juga besaran debit Q100 `r params$river_location` yang nantinya menjadi input model hidrolika sehingga diketahui seberapa luas pengaruh banjir yang terjadi disertai elevasi tinggi muka air banjirnya.
 
 ## Kesimpulan Analisa Hidrologi
 
